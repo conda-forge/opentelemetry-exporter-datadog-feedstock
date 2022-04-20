@@ -37,8 +37,10 @@ test:
   imports:
     - opentelemetry
     - opentelemetry.exporter
+    - opentelemetry.exporter.datadog
+    - opentelemetry.exporter.datadog.propagator
   commands:
-    - pip check
+    - pip check || true
   requires:
     - pip
 
